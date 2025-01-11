@@ -26,6 +26,12 @@ document.getElementById("noteForm").addEventListener("submit", async (e) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ title, content })
     });
+    
+    // Efface les champs après l'ajout
+    document.getElementById("title").value = "";
+    document.getElementById("content").value = "";
+
+    // Recharge les notes
     fetchNotes();
 });
 
