@@ -1,14 +1,61 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #444;
 }
 
 form {
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacement uniforme entre les éléments */
+    max-width: 400px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.note {
-    border: 1px solid #ddd;
+form input[type="text"],
+form textarea {
+    width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 10px; /* Espacement entre les champs */
+    box-sizing: border-box; /* Assure que padding et bordures sont inclus dans la largeur */
+}
+
+form textarea {
+    resize: none; /* Supprime le redimensionnement */
+    height: 100px; /* Taille par défaut pour éviter l'effet de débordement */
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none; /* Supprime la bordure bleue par défaut au focus */
+    border-color: #007bff; /* Met en évidence la bordure au focus */
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5); /* Ajoute un effet lumineux au focus */
 }
