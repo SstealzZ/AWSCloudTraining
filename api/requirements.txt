@@ -2,4 +2,5 @@ fastapi
 uvicorn
 sqlalchemy
 pymysql
-pydantic 
+pydantic
+boto3
