@@ -1,5 +1,5 @@
 const config = {
-    apiUrl: "http://127.0.0.1:8000/notes", // API URL
+    apiUrl: "http://3.230.200.139:8000/notes", // API URL
 };
 
 // Récupérer toutes les notes
